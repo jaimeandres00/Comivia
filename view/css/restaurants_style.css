@@ -1,0 +1,486 @@
+/* 0) Reglas globales */
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-family: Arial,Verdana,"sans-serif","Times New Roman"; 
+}
+
+/* 0) Cuerpo */
+body { 
+	background: #FFDE63; 
+}
+
+/* 0) Contenedor principal */
+.wrapper { 
+	width: 70%; 
+	margin: auto; 
+	overflow: hidden; 
+}
+
+/* 1) Encabezado */
+header {
+	background: #424949;
+	width: 100%;
+	height: auto;
+	margin-bottom: 2%;
+	border-bottom: 5px solid #1b2631;	
+	overflow: hidden;
+}
+
+/* 1.1) Contenedor banner */
+.banner { 
+	width: 35%; 
+	height: auto; 
+	float: left; 
+}
+
+/* 1.2) Título principal */
+.banner h1 {
+	width: 60%;
+	color: #D9D9D9;
+	font-size: 400%;
+	font-family: "AR CENA";
+	text-align: center;
+	height: auto;
+	margin: auto;
+	line-height: 95px;
+}
+
+/* 1.3) Contenedor de perfíl */
+.prof-wrapper { 
+	width: 25%; 
+	height: 95px;
+	position: relative; 
+	float: right;
+}	
+
+/* 1.4) Contenedor contenido de perfíl  */
+.prof-content {
+	width: 90%;
+	height: 60%;
+	position: absolute;
+	margin-top: -33.5px;
+	padding: 5px 10px;
+	border: 2px solid #515a5a; 
+	top: 50%;
+}
+
+/* 1.5) Contenedor de imagen de usuario  de perfíl */
+.prof-img {
+	width: 20%;
+	text-align: center;
+	border-right: 2px solid #515a5a;
+	padding-right: 10px;
+	float: left;
+	overflow: hidden;
+}
+
+/* 1.6) Contenedor del nombre de usuario y botón de cierre de sesión de perfíl */
+.prof-user { 
+	width: 70%; 
+	height: 100%; 
+	float: right; 
+}
+
+/* 1.7) Imagen de usuario del perfíl */
+.prof-img img { 
+	border-radius: 50% 
+}
+
+/* 1.8) Contenedor superior de nombre y apellido de perfíl */
+.prof-top { 
+	width: 100%; 
+	height: 60%; 	
+	display: flex; 
+	justify-content: center; 
+	align-items: end; 
+}
+
+/* 1.9) Nombre y apellido de perfíl */
+.prof-top h2{ 
+	font-size:100%; 
+	font-weight:bold; 
+	text-align:center; 
+	color:#f0f3f4; 
+	font-weight:bold;
+}
+
+/* 1.10) Contenedor inferior de enlace de cierre de sesión del perfíl */
+.prof-bottom{ 
+	width:100%; 
+	height:40%;
+	display:flex; 
+	justify-content:center; 
+	align-items:center; 
+}
+
+/* 1.11) Enlace de cierre de sesión del perfíl */
+.prof-bottom a{ 
+	color:#FFDE63; 
+	text-decoration:none; 
+	font-size: 80%; 
+}
+
+/* 2) Contenedor introducción */
+.intro { 
+	width: 100%; 
+	margin-bottom: 45px; 
+}
+
+/* 2.1) Título de introducción */
+.intro h2 {
+	width: 100%;
+	font-family: "AR CENA";
+	color: #1b2631;
+	font-size: 500%;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+/* 2.2) Párrafo de introducción */
+.intro p { 
+	width: 100%; 
+	font-size: 180%; 
+	text-align: center;
+	color: #000000;
+}
+
+/* 2.3) Palabras enfocadas de párrafo de introducción */
+.intro span { 
+	font-weight: bold; 
+}
+
+/* 3) Contenedor de seccion de restaurantes */
+.restaurants-container { 
+	width: 80%;
+	margin: auto;
+	height: auto;
+}
+
+/* 3.1) Contenedor de acordeones de restaurantes */
+.accordions-container { 
+	width: 100%; 
+	height: auto;
+	display: inline-block;
+	line-height: 30px;
+}
+
+/* 3.2) Listas de acordeones */
+.accordions-container ul {
+	list-style: none;
+}
+
+/* 3.3) Enlaces de acordeones */
+.accordions-container a {
+	text-decoration: none;
+}
+
+/* 3.4) Lista de restaurantes y objeto restaurante */
+.restaurants-list, .restaurant-object {
+	width: 100%;
+	height: auto;
+}
+
+/* 3.6) Enlace de despliegue de acordeones */
+.restaurant-link {
+	height: auto;
+	color: #1b2631;
+	display: block;
+	border: 3px solid #1b2631;
+	padding: 20px 25px;
+	background: #D9D9D9;
+	overflow: hidden;
+}
+
+/* 3.7) Enlace de despliegue de acordeones, estado: sobre el botón */
+.restaurant-link:hover {
+	background: #424949;
+}
+
+/* 3.8) Nombre del restaurante e icono, estado: sobre el enlace de despliegue de acordeones */
+.restaurant-link:hover > div h3, .restaurant-link:hover > span {
+	color: #FFDE63;
+}
+
+/* 3.9) Descripción del restaurante, estado: sobre el enlace de despliegue de acordeones */
+.restaurant-link:hover > div p {
+	color: #f0f3f4;
+}
+
+/* 3.10) Enlace de despliegue de acordeones, estado: acordeón desplegado */
+.restaurant-link.open {
+	background: #424949;
+}
+
+/* 3.11) Descripción del restaurante, estado: acordeón desplegado */
+.restaurant-link.open > div h3, .restaurant-link.open > span {
+	color: #FFDE63;
+}
+
+/* 3.12) Descripción del restaurante, estado: acordeón desplegado */
+.restaurant-link.open > div p {
+	color: #f0f3f4;
+}
+
+
+/* 3.13) Contenedor de información de restaurante */
+.restaurant-content {
+	width: 90%;
+	height: auto;
+	float: left;
+}
+
+/* 3.14) Título con nombre del restaurante */
+.restaurant-content h3 {
+	display: inline-block;
+	font-size: 40px;
+	font-family: "AR CENA";
+}
+
+/* 3.15) Parrafo con descripción del restaurante */
+.restaurant-content p {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+/* 3.16) Icono de items de restaurante */
+.toggle-icon {
+	width: 10%;
+	line-height: 77.5px;
+	display: inline-block;
+	text-align: center;
+	height: auto;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+/* 3.17) Lista sin orden de items */
+.items-list {
+	width: 100%;
+	height: auto;
+	display: none;
+}
+
+/* 3.18) Objeto item de la lista de items del restaurante */
+.item-object {
+	width: auto;
+	height: auto;
+	color: #1b2631;
+	border: 3px solid #1b2631;
+	border-top: 0px;
+	background: #D9D9D9;
+	padding: 15px 20px;
+}
+
+/* 3.19) Contenedor del contenido del objeto item */
+.item-content {
+	width: auto;
+	height: auto;
+	border: 2px solid #1b2631;
+	background: #f0f3f4;
+	padding: 10px;
+}
+
+/* 3.20) Título con el nombre del item */
+.item-content h3 {
+	width: auto;
+	height: auto;
+	font-size: 22px;
+	padding: 5px 0px;
+	border-bottom: 2px solid #1b2631;
+}
+
+/* 3.21) Parrafo de detalles del item */
+.item-content p {
+	text-indent: 2%;
+	font-size: 18px;
+	line-height: 25px;
+	padding: 0px 10px;
+	margin: 15px 0px;	
+	text-align: justify;
+}
+
+/* 3.22) Formulario tabla con el precio por unidad, cantidad y botón de compra del item */
+.item-content form {
+	width: 100%;
+	height: auto;
+}
+
+/* 3.23) Tabla con el precio por unidad, cantidad y botón de compra del item */
+.item-content table {
+	width: 96%;
+	margin: 0px 2%;
+}
+
+/* 3.) Celda con palabra énfasis */
+.cell-title {
+	width: 30%;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px 0px;
+	text-align: left;				
+}
+
+/* 3.24) Celda con el campo de texto de detalles del item */
+.cell-details {
+	width: 70%;
+}
+
+/* 3.25) Campo de texto de detalles del item  */
+.cell-details input {
+	width: 100%;	
+	height: 28px;	
+	font-size: 18px;
+	padding: 0px 5px;	
+}
+
+/* 3.26) Celda con el precio por unidad y cantidad del item  */
+.cell {
+	font-size: 18px;
+	width: 30%;
+	text-align: left;
+	padding: 10px 0px;
+}
+
+/* 3.27) Palabras énfasis de información de item */
+.cell label {
+	width: 40%;
+	font-weight: bold;
+	display: block;
+	float: left;
+}
+
+/* 3.28) Campo de texto con el precio del item */
+.pItem {
+	width: 60%;
+	height: 30px;	
+	display: block;
+	background: #f0f3f4;
+	font-size: 18px;
+	text-align: left;	
+	border: 0px;
+}
+
+/* 3.29) Campo de texto con la cantidad del item */
+.nItems {
+	width: 15%;
+	height: 28px;	
+	font-size: 18px;
+	text-align: center;	
+	float: left;
+}
+
+/* 3.30) Botones de mas y menos */
+.more, .less{
+	font-size: 20px;
+	float: left;
+	width: 10%;
+	text-align: center;
+	height: 30px;	
+}
+
+/* 3.31) Columna de la tabla con el botón de compra del item */
+.cell-buy {
+	width: 20%;
+}
+
+/* 3.32) Enlace de compra del item */
+.cell-buy input {
+	width: 100%;
+	display: block;
+	background: #424949;
+	color: #f0f3f4;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px 0px;
+	border: 2px solid #1b2631;
+}
+
+/* 3.33) Enlace de compra del item, estado: sobre el botón */
+.cell-buy input:hover {
+	color: #FFDE63;	
+}
+
+/* 3.34) Enlace de compra del item, estado: botón activo */
+.cell-buy input:active {
+	font-size: 16px;
+}
+
+/* 3.35) Contenedor de paginación */
+.pagination-container {
+	width: 100%;
+	height: 60px;
+	margin-top: 45px;
+}
+
+/* 3.36) Tabla con paginación */
+.pagination-table {
+	margin: auto;
+}
+
+/* 3.37) Fila con paginación */
+.pagination-table tr{
+	height: auto;
+}
+
+/* 3.38) Botón de paginación */
+.pagination-table tr td a{
+	display: block;
+	font-size: 30px;
+	color: #1b2631;
+	font-weight: bold;
+	background: #f0f3f4;
+	margin: 0px 4px;
+	padding: 10px;
+	text-decoration: none;
+	border:2px solid #1b2631;
+}
+
+/* 3.39) Botón de paginación, estado: sobre el botón */
+.pagination-table tr td a:hover{
+	color: #FFDE63;
+	background: #424949;
+}
+
+/* 3.40) Botón de paginación actual */
+.pagination-table tr td a.actual-page{
+	color: #FFDE63;
+	background: #424949;	
+}
+
+/* 4) Pie de página */
+footer {
+	background: #424949;
+	color: #f0f3f4;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2%;
+	border-top: 5px solid #1b2631;
+}
+
+/* 4.1) Contenedor de pie de página */
+footer .wrapper { 
+	height: auto; 
+	padding: 10px; 
+}
+
+/* 4.2) Párrafo de información de pie de página */
+footer .wrapper p { 
+	margin-bottom: 15px; 
+	line-height: 25px; 
+}
+
+/* 4.3) Palabras énfasis de pie de página */
+footer .wrapper span { 
+	font-size: 140%; 
+	color: #FFDE63; 
+	line-height: 35px; 
+}
+
+/* 4.4) Imagen de pie de página */
+footer .wrapper img { 
+	border-radius: 50%; 
+	border: 5px solid #FFDE63; 
+}

@@ -1,0 +1,274 @@
+/* 0) Reglas globales */
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-family: Arial,Verdana,"sans-serif","Times New Roman"; 
+}
+
+/* 0) Cuerpo */
+body { 
+	background-color: #FFDE63; 
+}
+
+/* 0) Contenedor principal */
+.wrapper { 
+	width: 70%; 
+	margin: auto; 
+	overflow: hidden; 
+}
+
+/* 1) Encabezado */
+header {
+	background: #424949;
+	width: 100%;
+	margin-bottom: 2%;
+	border-bottom: 5px solid #1b2631;
+	overflow: hidden;
+}
+
+/* 1.1) Contenedor banner */
+.wrapper .banner { 
+	width: 35%; 
+	height: auto; 
+	float: left;  
+}
+
+/* 1.2) Título principal */
+.wrapper .banner h1 {
+	width: 60%;
+	color: #D9D9D9;
+	font-size: 400%;
+	font-family: "AR CENA";
+	text-align: center;
+	height: auto;
+	margin: auto;
+	line-height: 95px;
+}
+
+/* 1.3) Contenedor de formulario de inicio de sesión */
+.wrapper .log-wrapper {
+	width: 50%;
+	height: 95px;
+	position: relative;
+	float: right;
+}
+
+/* 1.4) Formulario de inicio de sesión */
+.wrapper .log-wrapper #login {
+	width: 100%;
+	height: auto;
+	color: #f0f3f4;
+	font-size: 80%;
+	position: absolute;
+	top: 50%;
+	margin-top: -20.48335px;
+	line-height: 160%;
+	text-align: center;
+	overflow: hidden;
+}
+
+/* 1.5) Secciónes de formulario */
+.wrapper .log-wrapper #login .log-left, .wrapper .log-wrapper #login .log-center, .wrapper .log-wrapper #login .log-right { 
+	width: 33.3%; 
+	height: auto; 
+	float: left; 
+}
+
+/* 1.6) Seccion derecha de formulario */
+.wrapper .log-wrapper #login .log-right { 
+	width: 22%; 
+}
+
+/* 1.7) Cajas de texto de inicio de sesión */
+.wrapper .log-wrapper #login .log-left input, .wrapper .log-wrapper #login .log-center input { 
+	width: 86%; 
+	height: 20px; 
+}
+
+/* 1.8) Botón de inicio de sesión */
+.log-right input { 
+	background: #FFDE63;
+	font-weight: bold; 
+	width: 80.427%; 
+	height: 22px; 
+	border: 1px solid #000000;
+}
+
+/* 1.9) Botón de inicio de sesión, estado: sobre el botón */
+.log-right input:hover {	
+	background: #D1B95F; 
+}
+
+/* 1.10) Botón de inicio de sesión, estado: botón activo */
+.log-right input:active { 
+	background: #bba44e; 
+	border: 1px solid #f0f3f4; 
+}
+
+/* 2) Sección de artículo */
+.article { 
+	width: 58%; 
+	margin-right: 2%;	
+	float: left; 
+}
+
+/* 2.1) Artículo  */
+.article article { 
+	padding: 50px; 
+}
+
+/* 2.2) Título de artículo */
+.article h2 {
+	font-size: 400%;
+	color: #1b2631;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: "AR CENA";
+}
+
+/* 2.3) Párrafo de artículo */
+.article p { 
+	font-size: 140%; 
+	line-height: 35px; 
+	text-align: justify;
+	color: #000000; 
+}
+
+/* 2.4) Palabras enfocadas de artículo */
+.article article span {
+	font-weight: bold;
+}
+
+/* 3) Sección de formulario registro */
+aside {
+	background: #424949;
+	width: 35%;
+	height: auto;
+	border: 3px solid #1b2631;
+	border-radius: 2%;
+	padding: 2%;
+	float: left;
+}
+
+/* 3.1) Contenedor por línea */
+.reg-wrapper {
+	width: 100%; 
+	height: auto; 
+	margin-bottom: 15px; 
+} 
+
+/* 3.2) Título de registro */
+aside h3 {
+	color: #f0f3f4;
+	font-size: 190%;
+	border-bottom: 2px solid #FFDE63;
+	padding: 0px 0px 15px 0px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/* 3.3) Contenedor de línea de nombre y apellido de registro */
+.reg-lane { 
+	overflow: hidden; 
+} 
+
+/* 3.4) Contenedores de nombre y apellido de registro */
+.same-lane { 
+	width: 50%; 
+	float: left; 
+}
+
+/* 3.5) Inputs de nombre y apellido de registro */
+.same-lane input { 
+	width: 96%; 
+	height: 30px; 
+	padding-left: 4px; 
+} 
+
+/* 3.6) Inputs de correo electrónico, contraseña y teléfono de registro */
+.reg-form input { 
+	width: 98%; 
+	height: 30px; 
+	padding-left: 4px;
+}
+
+/* 3.7) Contenedores de texto de registro */
+.reg-title { 
+	color: #f0f3f4; 
+	font-size: 85%; 
+}
+
+/* 3.8) Contenedor de botón de registro */
+.reg-button { 
+	text-align: center; 
+}
+
+/* 3.9) Botón de registro */
+.reg-button input { 
+	background: #FFDE63; 
+	width: 100%; 
+	height: 30px;
+	font-size: 100%;
+	font-weight: bold; 
+	border: 1px solid #000000; 
+}
+
+/* 3.10) Botón de registro, estado: sobre el botón */
+.reg-button input:hover { 
+	background: #D1B95F; 
+}
+
+/* 3.11) Botón de registro, estado: botón activo */
+.reg-button input:active { 
+	background: #bba44e; 
+	border: 1px solid #f0f3f4; 
+}
+
+/* 3.12) Información de confidencialidad de registro */
+.reg-confidentiality p { 
+	color: #f0f3f4; 
+	text-align: center; 
+	font-size: 70%; 
+}
+ 
+/* 3.13) Palabras énfasis de registro */
+.reg-confidentiality span { 
+	color: #FFDE63; 
+	font-weight: bold; 
+}
+
+/* 4) Pie de página */
+footer {
+	background: #424949;
+	color: #f0f3f4;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2%;
+	border-top: 5px solid #1b2631;
+}
+
+/* 4.1) Contenedor de pie de página */
+footer .wrapper { 
+	height: auto; 
+	padding: 10px; 
+}
+
+/* 4.2) Párrafo de información de pie de página */
+footer .wrapper p { 
+	margin-bottom: 15px; 
+	line-height: 25px; 
+}
+
+/* 4.3) Palabras énfasis de pie de página */
+footer .wrapper span { 
+	font-size: 140%; 
+	color: #FFDE63; 
+	line-height: 35px; 
+}
+
+/* 4.4) Imagen de pie de página */
+footer .wrapper img { 
+	border-radius: 50%; 
+	border: 5px solid #FFDE63; 
+ }

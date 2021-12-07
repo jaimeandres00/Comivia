@@ -1,0 +1,266 @@
+/* 0) Reglas globales */
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-family: Arial,Verdana,"sans-serif","Times New Roman"; 
+}
+
+/* 0) Cuerpo */
+body { 
+	background: #FFDE63; 
+}
+
+/* 0) Contenedor principal */
+.wrapper { 
+	width: 70%; 
+	margin: auto; 
+	overflow: hidden; 
+}
+
+/* 1) Encabezado */
+header {
+	background: #424949;
+	width: 100%;
+	height: auto;
+	margin-bottom: 2%;
+	border-bottom: 5px solid #1b2631;	
+	overflow: hidden;
+}
+
+/* 1.1) Contenedor banner */
+.banner { 
+	width: 35%; 
+	height: auto; 
+	float: left; 
+}
+
+/* 1.2) Título principal */
+.banner h1 {
+	width: 60%;
+	color: #D9D9D9;
+	font-size: 400%;
+	font-family: "AR CENA";
+	text-align: center;
+	height: auto;
+	margin: auto;
+	line-height: 95px;
+}
+
+/* 1.3) Contenedor de perfíl */
+.prof-wrapper { 
+	width: 25%; 
+	height: 95px;
+	position: relative; 
+	float: right;
+}	
+
+/* 1.4) Contenedor contenido de perfíl  */
+.prof-content {
+	width: 90%;
+	height: 60%;
+	position: absolute;
+	margin-top: -33.5px;
+	padding: 5px 10px;
+	border: 2px solid #515a5a; 
+	top: 50%;
+}
+
+/* 1.5) Contenedor de imagen de usuario  de perfíl */
+.prof-img {
+	width: 20%;
+	text-align: center;
+	border-right: 2px solid #515a5a;
+	padding-right: 10px;
+	float: left;
+	overflow: hidden;
+}
+
+/* 1.6) Contenedor del nombre de usuario y botón de cierre de sesión de perfíl */
+.prof-user { 
+	width: 70%; 
+	height: 100%; 
+	float: right; 
+}
+
+/* 1.7) Imagen de usuario del perfíl */
+.prof-img img { 
+	border-radius: 50% 
+}
+
+/* 1.8) Contenedor superior de nombre y apellido de perfíl */
+.prof-top { 
+	width: 100%; 
+	height: 60%; 	
+	display: flex; 
+	justify-content: center; 
+	align-items: end; 
+}
+
+/* 1.9) Nombre y apellido de perfíl */
+.prof-top h2{ 
+	font-size:100%; 
+	font-weight:bold; 
+	text-align:center; 
+	color:#f0f3f4; 
+	font-weight:bold;
+}
+
+/* 1.10) Contenedor inferior de enlace de cierre de sesión del perfíl */
+.prof-bottom{ 
+	width:100%; 
+	height:40%;
+	display:flex; 
+	justify-content:center; 
+	align-items:center; 
+}
+
+/* 1.11) Enlace de cierre de sesión del perfíl */
+.prof-bottom a{ 
+	color:#FFDE63; 
+	text-decoration:none; 
+	font-size: 80%; 
+}
+
+/* 2) Contenedor introducción */
+.intro { 
+	width: 100%; 
+	margin-bottom: 45px; 
+}
+
+/* 2.1) Título de introducción */
+.intro h2 {
+	width: 100%;
+	font-family: "AR CENA";
+	color: #1b2631;
+	font-size: 500%;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+/* 2.2) Párrafo de introducción */
+.intro p { 
+	width: 100%; 
+	font-size: 180%; 
+	text-align: center;
+	color: #000000;
+}
+
+/* 2.3) Palabras enfocadas de párrafo de introducción */
+.intro span { 
+	font-weight: bold; 
+}
+
+/* 3) Contenedor de roles */
+.roles-wrapper { 
+	width: 100%; 
+	overflow: hidden; 
+}
+
+/* 3.1) Contenedor de rol de cliente */
+.client-role { 
+	width: 50%; 
+	height: auto; 
+	float: left; 
+}
+
+/* 3.2) Contenedor de rol de repartidor */
+.delivery-role { 
+	width: 50%; 
+	height: auto; 
+	float: right; 
+}
+
+/* 3.3) Contenedores de información de rol */
+.role-info { 
+	width: 93%; 
+	padding: 0px 20px; 
+	margin-bottom: 20px; 
+}
+ 
+/* 3.4) Contenedores de botónes de rol */
+.role-btn { 
+	width: 100%; 
+	height: auto; 
+	margin-bottom: 45px; 
+}
+
+/* 3.5) Botónes de rol */
+.role-btn a {
+	width: 40%;
+	line-height: 60px;
+	background: #424949;
+	text-align: center;
+	text-decoration: none;
+	color: #f0f3f4; 
+	font-size: 180%;
+	font-weight: bold; 	
+	padding: 15px 20px;
+	margin: auto;
+	display: block;
+	border-radius: 50px;
+	transition: all 500ms ease; 	
+}
+
+/* 3.6) Botónes de rol, estado: sobre el botón */
+.role-btn a:hover { 
+	color: #FFDE63;
+	font-size: 190%; 
+	background: #515a5a; 
+}
+
+/* 3.7) Botónes de rol, estado: botón activo */
+.role-btn a:active {
+	font-size: 170%;
+	color: #FFDE63;
+	text-decoration: none;
+	background: #3c4040;
+}
+
+/* 3.8) Párrafos de información de rol */
+.role-info p { 
+	width: 100%; 
+	text-align: center; 
+	font-size: 140%;
+	color: #000000; 
+}
+
+/* 3.9) Palabras enfocadas de párrafos de información de rol */
+.role-info span { 
+	font-weight: bold; 
+}
+
+/* 4) Pie de página */
+footer {
+	background: #424949;
+	color: #f0f3f4;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2%;
+	border-top: 5px solid #1b2631;
+}
+
+/* 4.1) Contenedor de pie de página */
+footer .wrapper { 
+	height: auto; 
+	padding: 10px; 
+}
+
+/* 4.2) Párrafo de información de pie de página */
+footer .wrapper p { 
+	margin-bottom: 15px; 
+	line-height: 25px; 
+}
+
+/* 4.3) Palabras énfasis de pie de página */
+footer .wrapper span { 
+	font-size: 140%; 
+	color: #FFDE63; 
+	line-height: 35px; 
+}
+
+/* 4.4) Imagen de pie de página */
+footer .wrapper img { 
+	border-radius: 50%; 
+	border: 5px solid #FFDE63; 
+}

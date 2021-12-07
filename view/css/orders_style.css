@@ -1,0 +1,385 @@
+/* 0) Reglas globales */
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-family: Arial,Verdana,"sans-serif","Times New Roman"; 
+}
+
+/* 0) Cuerpo */
+body { 
+	background: #FFDE63; 
+}
+
+/* 0) Contenedor principal */
+.wrapper { 
+	width: 70%; 
+	margin: auto; 
+	overflow: hidden; 
+}
+
+/* 1) Encabezado */
+header {
+	background: #424949;
+	width: 100%;
+	height: auto;
+	margin-bottom: 2%;
+	border-bottom: 5px solid #1b2631;	
+	overflow: hidden;
+}
+
+/* 1.1) Contenedor banner */
+.banner { 
+	width: 35%; 
+	height: auto; 
+	float: left; 
+}
+
+/* 1.2) Título principal */
+.banner h1 {
+	width: 60%;
+	color: #D9D9D9;
+	font-size: 400%;
+	font-family: "AR CENA";
+	text-align: center;
+	height: auto;
+	margin: auto;
+	line-height: 95px;
+}
+
+/* 1.3) Contenedor de perfíl */
+.prof-wrapper { 
+	width: 25%; 
+	height: 95px;
+	position: relative; 
+	float: right;
+}	
+
+/* 1.4) Contenedor contenido de perfíl  */
+.prof-content {
+	width: 90%;
+	height: 60%;
+	position: absolute;
+	margin-top: -33.5px;
+	padding: 5px 10px;
+	border: 2px solid #515a5a; 
+	top: 50%;
+}
+
+/* 1.5) Contenedor de imagen de usuario  de perfíl */
+.prof-img {
+	width: 20%;
+	text-align: center;
+	border-right: 2px solid #515a5a;
+	padding-right: 10px;
+	float: left;
+	overflow: hidden;
+}
+
+/* 1.6) Contenedor del nombre de usuario y botón de cierre de sesión de perfíl */
+.prof-user { 
+	width: 70%; 
+	height: 100%; 
+	float: right; 
+}
+
+/* 1.7) Imagen de usuario del perfíl */
+.prof-img img { 
+	border-radius: 50% 
+}
+
+/* 1.8) Contenedor superior de nombre y apellido de perfíl */
+.prof-top { 
+	width: 100%; 
+	height: 60%; 	
+	display: flex; 
+	justify-content: center; 
+	align-items: end; 
+}
+
+/* 1.9) Nombre y apellido de perfíl */
+.prof-top h2{ 
+	font-size:100%; 
+	font-weight:bold; 
+	text-align:center; 
+	color:#f0f3f4; 
+	font-weight:bold;
+}
+
+/* 1.10) Contenedor inferior de enlace de cierre de sesión del perfíl */
+.prof-bottom{ 
+	width:100%; 
+	height:40%;
+	display:flex; 
+	justify-content:center; 
+	align-items:center; 
+}
+
+/* 1.11) Enlace de cierre de sesión del perfíl */
+.prof-bottom a{ 
+	color:#FFDE63; 
+	text-decoration:none; 
+	font-size: 80%; 
+}
+
+/* 2) Contenedor introducción */
+.intro { 
+	width: 100%; 
+	margin-bottom: 45px; 
+}
+
+/* 2.1) Título de introducción */
+.intro h2 {
+	width: 100%;
+	font-family: "AR CENA";
+	color: #1b2631;
+	font-size: 500%;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+/* 2.2) Párrafo de introducción */
+.intro p { 
+	width: 100%; 
+	font-size: 180%; 
+	text-align: center;
+	color: #000000;
+}
+
+/* 2.3) Palabras enfocadas de párrafo de introducción */
+.intro span { 
+	font-weight: bold; 
+}
+
+/* 3) Contenedor de seccion de ordenes */
+.orders-container {
+	width: 80%;
+	margin: auto;
+	height: auto;
+	padding: 15px 20px;	
+	border: 3px solid #1b2631;
+	background: #D9D9D9;		
+}
+
+/* 3.1) Contenedor de la tabla con los pedidos */
+.table-container {
+	width: 100%; 
+	height: auto;
+	line-height: 30px;	
+}
+
+/* 3.2) Tabla de ordenes */
+.orders-table {
+	width: 100%;
+	height: auto;
+	background: #f0f3f4;
+	border-collapse: collapse;
+}
+
+/* 3.3) Fila de titulos */
+.titles-row {
+	color: #1b2631;
+}
+
+/* 3.4) Celdas de titulos */
+.titles-row td {
+	padding: 10px 0px;
+	border: 2px solid #1b2631;
+	text-align: center;
+	font-size: 20px;
+}
+
+/* 3.5) Celdas de titulos, estado: sobre la celda */
+.titles-row td:hover{
+	background: #424949;
+	color: #FFDE63;
+}
+
+/* 3.6) Primera y segunda columna con el nombre de usuario y item */
+.first-column, .second-column {
+	width: 15%;
+}
+
+/* 3.7) Tercera columna con la cantidad de items */
+.third-column {
+	width: 7%;
+}
+
+/* 3.8) Cuarta columna con el valor de la orden */
+.fourth-column {
+	width: 8%;
+}
+
+/* 3.9) Quinta columna con los detalles de la orden */
+.fifth-column {
+	width: 35%;
+}
+
+/* 3.10) Sexta columna con el botón de orden */
+.sixth-column {
+	width: 20%;
+}
+
+/* 3.11) Fila en blanco */
+.no-break-space {
+	background: #D9D9D9;
+	border: 2px solid #D9D9D9;
+}
+
+/* 3.12) Filas con datos de ordenes, estado: sobre la fila;  */
+.top-row:hover {
+	background: #ccc;
+}
+
+/* 3.13) Filas con datos de ordenes, estado: sobre la fila;  */
+.middle-row:hover {
+	background: #ccc;
+}
+
+/* 3.14) Filas con datos de ordenes, estado: sobre la fila;  */
+.bottom-row:hover {
+	background: #ccc;
+}
+
+/* 3.15) Celda con datos de ordenes */
+.top-row td {
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 0px;
+	border-top: 2px solid #1b2631;
+	border-bottom: 2px solid #ccc;
+}
+
+/* 3.16) Celda con datos de ordenes */
+.middle-row td {
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 0px;	
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+/* 3.17) Celda con datos de ordenes */
+.bottom-row td {
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 0px;
+	border-top: 2px solid #ccc;	
+	border-bottom: 2px solid #1b2631;
+}
+
+/* 3.18) Columna izquierda */
+.left-column {
+	border-left: 2px solid #1b2631;	
+}
+
+/* 3.19) Columna derecha */
+.right-column {
+	border-right: 2px solid #1b2631;
+}
+
+/* 3.20) Columna del medio */
+.middle-column {
+	border-right: 2px solid #1b2631;
+	border-left: 2px solid #1b2631;	
+}
+
+/* 3.21) Botón de confirmación de orden */
+.pick-btn {
+	margin: auto;
+	width: 90%;
+	background: #424949;
+	color: #f0f3f4;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 0px;
+	border: 2px solid #1b2631;	
+}
+
+/* 3.22) Botón de confirmación de orden, estado: sobre el botón */
+.pick-btn:hover {
+	color: #FFDE63;
+}
+
+/* 3.23) Botón de confirmación de orden, estado: botón activo */
+.pick-btn:active {
+	font-size: 16px;
+}
+
+/* 3.24) Contenedor de paginación */
+.pagination-container {
+	width: 100%;
+	height: 60px;
+	margin-top: 45px;
+}
+
+/* 3.25) Tabla con paginación */
+.pagination-table {
+	margin: auto;
+}
+
+/* 3.26) Fila con paginación */
+.pagination-table tr{
+	height: auto;
+}
+
+/* 3.27) Botón de paginación */
+.pagination-table tr td a{
+	display: block;
+	font-size: 30px;
+	color: #1b2631;
+	font-weight: bold;
+	background: #f0f3f4;
+	margin: 0px 4px;
+	padding: 10px;
+	text-decoration: none;
+	border:2px solid #1b2631;
+}
+
+/* 3.28) Botón de paginación, estado: sobre el botón */
+.pagination-table tr td a:hover{
+	color: #FFDE63;
+	background: #424949;
+}
+
+/* 3.29) Botón de paginación actual */
+.pagination-table tr td a.actual-page{
+	color: #FFDE63;
+	background: #424949;	
+}
+
+/* 4) Pie de página */
+footer {
+	background: #424949;
+	color: #f0f3f4;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2%;
+	border-top: 5px solid #1b2631;
+}
+
+/* 4.1) Contenedor de pie de página */
+footer .wrapper { 
+	height: auto; 
+	padding: 10px; 
+}
+
+/* 4.2) Párrafo de información de pie de página */
+footer .wrapper p { 
+	margin-bottom: 15px; 
+	line-height: 25px; 
+}
+
+/* 4.3) Palabras énfasis de pie de página */
+footer .wrapper span { 
+	font-size: 140%; 
+	color: #FFDE63; 
+	line-height: 35px; 
+}
+
+/* 4.4) Imagen de pie de página */
+footer .wrapper img { 
+	border-radius: 50%; 
+	border: 5px solid #FFDE63; 
+}
